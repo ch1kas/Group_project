@@ -1,0 +1,45 @@
+{% load static %}
+
+
+
+
+{% block container %}
+
+<table class="table">
+
+    <tr>
+
+        <thead class="thead-light">
+
+            <tr>
+
+                <th scope="col">Firstname</th>
+
+                <th scope="col">Lastname</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            {% for volunteer in volunteers %}
+
+            <tr>
+
+                <td><a href="{% url 'users:volunteer_detail' volunteer.pk %}">{{ volunteer.first_name }}</a></td>
+
+                <td>{{ volunteer.first_name }}</td>
+
+                <td>{{ volunteer.last_name }}</td>
+
+            </tr>
+
+            {% endfor %}
+
+        </tbody>
+
+</table>
+
+
+{% endblock %}

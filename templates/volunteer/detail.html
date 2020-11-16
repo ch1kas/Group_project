@@ -1,0 +1,53 @@
+{% load static %}
+
+{% block container %}
+
+
+
+
+<div class="card">
+
+
+    <div class="card-body">
+
+    <dl class="row">
+
+      <dt class="col-sm-3">Firstname</dt>
+
+      <dd class="col-sm-9">{{ volunteer.first_name }}</dd>
+
+      <dt class="col-sm-3">Lastname</dt>
+
+      <dd class="col-sm-9">{{ volunteer.last_name }}</dd>
+
+        <dt class="col-sm-3">Phone number</dt>
+
+      <dd class="col-sm-9">{{ volunteer.phone_number }}</dd>
+
+        <dt class="col-sm-3">Email</dt>
+
+      <dd class="col-sm-9">{{ volunteer.email }}</dd>
+
+        <dt class="col-sm-3">Bio</dt>
+
+      <dd class="col-sm-9">{{ volunteer.bio }}</dd>
+
+        <dt class="col-sm-3">Image</dt>
+
+      <dd class="col-sm-9">{{ volunteer.image }}</dd>
+
+
+
+    </dl>
+
+
+
+
+    </div>
+
+</div>
+
+
+
+
+{% endblock %}
